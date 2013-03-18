@@ -28,39 +28,53 @@ EnvironmentRank::EnvironmentRank(){
 
 int EnvrironmentRank::ranking()
 {
-    //if number of creatures > 200
+    //if number of creatures > 0
     //subRank = 1
     //live = true
+	if(countTotal > 0);
+	subRank = 1;
+    live = true;
     
     
     
     
-    
-    //if number of creatures > 300
+    //if number of creatures > 50
     //subRank = 2
     //live = true
+    if(countTotal > 50);
+	subRank = 2;
+    live = true;
     
     
     
     
     
-    //if number of creatures > 400
+    //if number of creatures > 100
     //subRank = 3
     //live = true
+    if(countTotal > 100);
+	subRank = 3;
+    live = true;
+    
+      
     
     
     
     
     
-    
-    //if number of creatures > 500
+    //if number of creatures > 150
     //subRank = 4
     //live = false
+     if(countTotal > 150);
+	subRank = 4;
+    live = true;
     
     
     
     //if (Carnivore > 100 or Herivore > 100) and (plant < 150)
     //subRank2 = 1
+	if(countH > 10 && countP < 100)
+		subRank2 = 1;
     
     
     
